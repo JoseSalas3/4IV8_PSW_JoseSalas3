@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-align: justify;
+}
+
+body{
+    background-color: #c7c9e8;
+    background-size:cover;
+    color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    align-content: center;
+}
+
+
+.container-head{
+    width: 1000px;
+    height: 100px;
+    align-content: center ;
+    margin-left: 10%;
+    margin-top: 5%;
+}
+
+.especialidad{
+    text-align: center;
+    margin-right: 60%;
+}
+
+.imagen-perfil{
+    width: 300px;
+    height: 300px;
+    background-color: #1e1f24;
+}
+footer, article, aside{
+    border: 2px ;
+    margin: 1.5rem;
+    border-radius: 1px;
+    padding: 1rem;
+}
+
+article, aside{
+    width: 40%;
+    display: inline-block;
+    height: 750px;
+}
+
+aside{
+    background-color: #003141;
+    color: white;
+}
+
+h4.nombre{
+    color: salmon;
+}
+
+h4.fecha{
+    color: #1e1f24;
+}
+hr{
+    color: darkgrey;
+    height: 5px;
+}
+
+.circulo{
+    width: 50px;
+    height: 50px;
+    border: 14px solid white;
+    border-top: 16px solid #004f61;
+    border-radius: 50%;
+    align-self: center;
+}
+
+p.cir{
+    text-align:center;
+}
