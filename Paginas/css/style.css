@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@keyframes animacion_test{
+    from{
+        background-color: orange;
+    }
+    to{
+        background-color: aquamarine;
+    }
+}
+
+@keyframes animacion_test2{
+    from{
+        background-color:  rgb(4, 57, 92);
+    }
+    to{
+        background-color: aquamarine;
+    }
+}
+
+@keyframes animacion_test3{
+    from{
+        background-color:  rgb(51, 5, 104);
+    }
+    to{
+        background-color: aquamarine;
+    }
+}
+
+@keyframes animacion_test4{
+    from{
+        background-image: url(../imagenes/DBW_casa.png);
+    }
+    to{
+        background-image: url(../imagenes/DBW_kamehouse.png);
+    }
+    to{
+        background-image: url(../imagenes/DBW_namek.png);
+    }
+    to{
+        background-image: url(../imagenes/DBW_planeta_dioses.png);
+    }
+}
+
+html,body{
+    background-image: url(../imagenes/DBW_fondo.png);
+    background-size:cover;
+    color:white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    align-content: center;
+}
+header{
+
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    background-size:cover;
+    flex-direction: column;
+    background-image: url(../imagenes/DBW_menu.png);
+    align-content: center;
+
+}
+p{
+    color: white;
+}
+img{
+    align-items: center;
+}
+button{
+    text-align: end;
+    background-color: rgb(6, 58, 41);
+    color: white;
+    font-size: 15px;
+}
+
+td,th{
+    padding: 50px;
+    border: 2px solid white;
+}
+
+th{
+    font-size: 25px;
+}
+
+.fondo1{
+    animation: animacion_test 2s alternate infinite;
+}
+
+.fondo2{
+    animation: animacion_test2 2s alternate infinite;
+}
+
+.fondo3{
+    animation: animacion_test3 2s alternate infinite;
+}
+
+.sinop{
+    color: orangered;
+}
+
+.peli{
+    color: orange;
+}
+
+.twitter-timeline{
+    width: 150px;
+    height: 350px;
+}
+
+.contenedor-animacion{
+    width: 400px;
+    height: 200px;
+    animation: animacion_test4 2s alternate infinite;
+}
