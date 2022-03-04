@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/validar.js"></script>
+</head>
+<body>
+    <div class="container-form">
+        <form name="interesForm" method="post" 
+        onsubmit="return Calcular(this)" action="">
+
+            <h1>Calculadora de Intereses</h1>
+
+            <p><label>Valor Prestamo     :</label>
+                <input id="monto" type="number" 
+                onchange="Calculari()">
+            </p>
+
+            <p><label>Cuota Inicial      :</label>
+                <input id="cuota" type="number" 
+                onchange="Calculari()">
+            </p>
+
+            <p><label>Periodo de Meses   :</label>
+                <input id="meses" type="number" 
+                onchange="Calculari()">
+            </p>
+            </p>
+            <br>
+            <input type="submit" name="enviar" value="Enviar Datos">
+            <br>
+            <input type="reset" name="borrar" value="Borrar Datos" >
+
+        </form>
+        <br><br>
+        <div class="interes-tabla">
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Capital</th>
+                        <th>Cuota Inicial</th>
+                        <th>Meses</th>
+                        <th>Interes</th>
+                        <th>Valor final</th>
+                        <th>Valor intereses</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><p id="montoF"></p></td>
+                        <td><p id="cuotaI"></p></td>
+                        <td><p id="mesesF"></p></td>
+                        <td><p> 3.94% mensual</p></td>
+                        <td><p id="valorF"></p></td>
+                        <td><p id="cuotaFinal"></p></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div>
+        <footer>
+        Salas Chavez Jose De Jesus      4IV8
+        </footer>
+    </div>
+</body>
+    <script>
+    const form = document.getElementById("interesForm");
+
+    form.addEventListener("submit" , function(evente) {
+
+        event.preventDefault();
+        console.log(event)
+        }
+
+    );        
+    </script>
+</html>
