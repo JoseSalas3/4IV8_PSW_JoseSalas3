@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejecicios JavaScript</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <div class="container">
+        <!-- Problema 1 -->
+        <div class="container-problema">
+            <form method="post" name="formulario1" action="">
+                <label>Supongamos que un individuo desea invertir su capital 
+                    en un banco y desea saber cuanto dinero ganara despues de 
+                    un mes si el banco paga una razón de 2% mensual.
+                </label>
+                <table border="1px">
+                    <tr>
+                        <td>Introduce la cantidad a invertir: </td>
+                        <td> <input type="text" name="cantidad" 
+                            onkeypress="return validarn(event)"> </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td> <input type="button" value="Interes"
+                            onclick="interes()"> </td>
+                    </tr>
+                    <tr>
+                        <td>Su saldo total con el interes de 2% es:</td>
+                        <td> <input type="text" name="sueldoI"
+                            id="cantidadI" readonly="readonly" 
+                            class="input_text" > </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="button" value="Borrar Datos" 
+                            name="borrar" onclick="borrard_p1()" ></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+        <!-- Problema 2 -->
+        <div class="container-problema">
+            <form method="post" name="formulario2" action="">
+                <label><p>Un vendedor recibe un sueldo base mas un 10% extra por 
+                    comision de sus ventas. el vendedor desea saber cuanto dinero</p>
+                    <p>obtendrá por concepto de comisiones por las tres ventas que
+                        realiza en el mes y el total que recibira en el mes tomando</p>
+                    <p>en cuenta su sueldo base y comisiones</p>
+                </label>
+                <table border="1px">
+                    <tr>
+                        <td>Introduce la cantidad de su sueldo </td>
+                        <td> <input type="text" name="cantidad" 
+                            onkeypress="return validarn(event)"> </td>
+                    </tr>
+                    <tr>
+                        <td>Introduce la cantidad de la primera venta: </td>
+                        <td> <input type="text" name="cantidadV1" 
+                            onkeypress="return validarn(event)"> </td>
+                    </tr>
+                    <tr>
+                        <td>Introduce la cantidad de la segunda venta: </td>
+                        <td> <input type="text" name="cantidadV2" 
+                            onkeypress="return validarn(event)"> </td>
+                    </tr>
+                    <tr>
+                        <td>Introduce la cantidad de la tercera venta: </td>
+                        <td> <input type="text" name="cantidadV3" 
+                            onkeypress="return validarn(event)"> </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td> <input type="button" value="Calcular Conceptos"
+                            onclick="conceptos()"> </td>
+                    </tr>
+                    <tr>
+                        <td>El concepto por las 3 ventas es: </td>
+                        <td> <input type="text" name="conceptoF"
+                            id="cantidadV" readonly="readonly" 
+                            class="input_text" > </td>
+                    </tr>
+                    <tr>
+                        <td>Su saldo total es:</td>
+                        <td> <input type="text" name="totalF"
+                            id="cantidadF" readonly="readonly" 
+                            class="input_text" > </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="button" value="Borrar Datos" 
+                            name="borrar" onclick="borrard_p2()" ></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+        <!-- Problema 3 -->
+        <div class="container-problema">
+            <form method="post" name="formulario3" action="">
+                <label>Una tienda ofrece un descuento del 15% sobre el
+                     total de la compra y un cliente desea saber cuanto 
+                     debera pagar finalmente por su compra
+                </label>
+                <table border="1px">
+                    <tr>
+                        <td>Introduzaca el monto de su compra:  </td>
+                        <td> <input type="text" name="compra" 
+                            onkeypress="return validarn(event)"> </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td> <input type="button" value="Descuento"
+                            onclick="descuento()"> </td>
+                    </tr>
+                    <tr>
+                        <td>Precio total con descuento: </td>
+                        <td> <input type="text" name="descuentoF"
+                            id="cantidadI" readonly="readonly" 
+                            class="input_text" > </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="button" value="Borrar Datos" 
+                            name="borrar" onclick="borrard_p3()" ></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+        <!-- Problema 4 -->
+        <div class="container-problema">
+            <form method="post" name="formulario4" action="">
+                <label>Un alumno desea saber cual sera su calificacion final en
+                    la materia de Algoritmos. Dicha calificacion se compone de 
+                    los siguientes porcentajes:
+                    <p>55% del promedio de sus tres calificaciones parciales.</p>
+                    <p>30% de la calificacion del examen final.</p>
+                    <p>15% de la calificacion de un trabajo final.</p>
+
+                </label>
+                <table border="1px">
+                    <tr>
+                        <td>Introduce la calificacion del primer parcial: </td>
+                        <td> <input type="text" name="calificacion1" 
+                            onkeypress="return validarn(event)"> </td>
+                    </tr>
+                    <tr>
+                        <td>Introduce la calificacion del segundo parcial: </td>
+                        <td> <input type="text" name="calificacion2" 
+                            onkeypress="return validarn(event)"> </td>
+                    </tr>
+                    <tr>
+                        <td>Introduce la calificacion del primer parcial: </td>
+                        <td> <input type="text" name="calificacion3" 
+                            onkeypress="return validarn(event)"> </td>
+                    </tr>
+                    <tr>
+                        <td>Introduce la calificacion del examen final: </td>
+                        <td> <input type="text" name="calificacionEf" 
+                            onkeypress="return validarn(event)"> </td>
+                    </tr>
+                    <tr>
+                        <td>Introduce la calificacion del trabajo final: </td>
+                        <td> <input type="text" name="calificacionTf" 
+                            onkeypress="return validarn(event)"> </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td> <input type="button" value="Calcular calificacion"
+                            onclick="calcularCalificaciones()"> </td>
+                    </tr>
+                    <tr>
+                        <td>Su calificacion final en Algoritmia es: </td>
+                        <td> <input type="text" name="calificacionFinal"
+                            id="cantidadI" readonly="readonly" 
+                            class="input_text" > </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="button" value="Borrar Datos" 
+                            name="borrar" onclick="borrard_p4()" ></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+        <!-- Problema 5 -->
+        <div class="container-problema">
+            <form method="post" name="formulario5" action="">
+                <label>Un maestro desea saber que porcentaje 
+                    de hombres y mujeres hay en un grupo de estudiantes
+                </label>
+                <table border="1px">
+                    <tr>
+                        <td>Introduce la cantidad de alumnos: </td>
+                        <td> <input type="text" name="alumnos" 
+                            onkeypress="return validarn(event)"> </td>
+                    </tr>
+                    <tr>
+                        <td>Introduce la cantidad de alumnas: </td>
+                        <td> <input type="text" name="alumnas" 
+                            onkeypress="return validarn(event)"> </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td> <input type="button" value="Porcentajes"
+                            onclick="porcentajes()"> </td>
+                    </tr>
+                    <tr>
+                        <td>Porcentaje alumnos: </td>
+                        <td> <input type="text" name="alumnosP"
+                            id="cantidadI" readonly="readonly" 
+                            class="input_text" > </td>
+                    </tr>
+                    <tr>
+                        <td>Porcentaje alumnas: </td>
+                        <td> <input type="text" name="alumnasP"
+                            id="cantidadI" readonly="readonly" 
+                            class="input_text" > </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="button" value="Borrar Datos" 
+                            name="borrar" onclick="borrard_p5()" ></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+        <!-- Problema 6 -->
+        <div class="container-problema">
+            <form method="post" name="formulario6" action="">
+                <label>Realizar un algoritmo que calcule la edad de una persona
+                </label>
+                <table border="1px">
+                    <tr>
+                        <td>Introduzca el año de su nacimiento: </td>
+                        <td> <input type="text" name="edadA" 
+                            onkeypress="return validarn(event)"> </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td> <input type="button" value="Calcular edad"
+                            onclick="edad()"> </td>
+                    </tr>
+                    <tr>
+                        <td>Su edad es: </td>
+                        <td> <input type="text" name="edadF"
+                            id="cantidadI" readonly="readonly" 
+                            class="input_text" > años</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="button" value="Borrar Datos" 
+                            name="borrar" onclick="borrard_p6()" ></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+    <script src="js/interes.js" ></script>
+</body>
+</html>
