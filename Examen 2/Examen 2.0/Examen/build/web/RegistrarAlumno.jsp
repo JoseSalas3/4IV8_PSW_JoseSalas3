@@ -19,9 +19,9 @@
 
             <header>
 
-                <img src="Img/img1.png" width="100" height="100" alt="img1"/>
+               
                 <h1 class="text">Registro de Computadoras</h1>
-                <img src="Img/img2.png" width="65" height="100" alt="img2"/>
+                
 
             </header>
 
